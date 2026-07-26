@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Guitar Pick shape với glow -->
+  <path d="M32 6 Q52 6 50 30 Q45 52 32 56 Q19 52 14 30 Q12 6 32 6 Z" 
+        fill="#00ffcc" filter="url(#glow)"/>
+  
+  <!-- Sound waves inside -->
+  <g stroke="#0a0e1a" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="24" y1="28" x2="24" y2="38"/>
+    <line x1="32" y1="20" x2="32" y2="46"/>
+    <line x1="40" y1="28" x2="40" y2="38"/>
+  </g>
+</svg>
